@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula One Simulator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center h-screen">
+    <div class="text-center">
+        <h1 class="text-4xl font-bold mb-4">Formula One Simulator</h1>
+        <input type="text" id="driverName" placeholder="Enter Driver Name" class="p-2 rounded bg-gray-800 border border-gray-700 mb-4" required minlength="3">
+        <button id="startButton" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Start Race</button>
+    </div>
+    <canvas id="trackCanvas" width="800" height="600" class="hidden border border-gray-700"></canvas>
+    <div id="resultsModal" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center">
+        <div class="bg-gray-800 p-6 rounded">
+            <h2 class="text-2xl font-bold mb-4">Race Results</h2>
+            <p id="finalTime" class="text-lg"></p>
+            <button id="restartButton" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
