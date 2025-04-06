@@ -1,0 +1,35 @@
+/* Custom styles that extend Tailwind */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+#trackCanvas {
+    background-color: #111827;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+}
+
+#resultsModal {
+    transition: opacity 0.3s ease;
+}
+
+/* Track boundaries */
+.track-boundary {
+    stroke: #f59e0b;
+    stroke-width: 3;
+    fill: none;
+}
+
+/* Car styling */
+.car {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
+}
+
+/* Leaderboard styles */
+.leaderboard-entry {
+    transition: all 0.2s ease;
+}
+
+.leaderboard-entry:hover {
+    transform: scale(1.02);
+    background-color: #1e293b;
+}
